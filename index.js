@@ -6,10 +6,10 @@ let tasks = [];
 let categories = [];
 
 // REMOVE ME: SAMPLE FILLING
-tasks = [
-  { id: 0, title: "Game of thrones", category: "Movies", done: false },
-  { id: 1, title: "Toy Story 4", category: "Movies", done: false },
-];
+// tasks = [
+//   { id: 0, title: "Game of thrones", category: "Movies", done: false },
+//   { id: 1, title: "Toy Story 4", category: "Movies", done: false },
+// ];
 
 categories = ["Movies", "Groceries"];
 // SAMPLE
@@ -26,7 +26,16 @@ function taskChecked(taskId, checked) {
 function addTask() {
   const selectedCategory = getSelectedCategoryById(CATEGORY_SELECTOR);
   const taskTitle = getNewTaskText();
-  // continue the code here
+  const idNumber = tasks.length++;
+  const task = {
+    id: idNumber,
+    title: taskTitle,
+    category: selectedCategory,
+    done: false,
+  };
+  tasks.push(task);
+  renderTasks(tasks, "tasks-list");
+
   alert(`Category: ${selectedCategory} | Task: ${taskTitle}`);
 }
 
