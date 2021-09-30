@@ -1,6 +1,6 @@
 body {
   /* background-image: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"); */
-  background-image: url("https://i.pinimg.com/736x/8c/b2/bb/8cb2bba7f213e4bdb237414737e5aacc.jpg");
+  background-image: url("https://images.unsplash.com/photo-1513106021000-168e5f56609d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,8 +23,10 @@ body {
 
 .notepad {
   width: 80%;
+  height: 50%;
   max-width: 600px;
   box-shadow: 10px 10px 40px rgba(black, 0.15);
+  margin-top: 30px;
   border-radius: 10px;
   overflow: hidden;
   text-align: left;
@@ -50,7 +52,7 @@ body {
 } */
 
 .paper {
-  width: 100%;
+  width: 200%;
   height: 100%;
   min-height: 60vh;
   padding: 35px 20px;
@@ -73,6 +75,7 @@ body {
 .container {
   height: 100vh;
   width: 100vw;
+
   text-align: center;
 }
 
@@ -88,13 +91,7 @@ body {
   height: 150px;
   padding: 10px;
   margin: 40px;
-  /* background: linear-gradient(
-      217deg,
-      #63686a,
-      rgba(141, 219, 255, 0.507) 70.71%
-    ),
-    linear-gradient(127deg, #b5b5bd, rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, #3f87a6, rgba(0, 0, 255, 0) 70.71%); */
+
   background: linear-gradient(217deg, #3f87a6, rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, #ebf8e1, rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, #f69d3c, rgba(0, 0, 255, 0) 70.71%);
@@ -106,12 +103,6 @@ body {
   box-shadow: 0px 10px 13px -7px #000000, 0px 0px 35px -4px #000000,
     0px 0px 35px -4px #000000;
 }
-/* 
-.category-container {
-  display: flex;
-  justify-content: center;
-  width: 600px;
-} */
 
 .float-container {
   display: flex;
@@ -120,5 +111,11 @@ body {
   padding: 20px; */
 }
 .float-child {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  /* margin: 30px; */
+  /* background-color: #9fa63f5d; */
 }
