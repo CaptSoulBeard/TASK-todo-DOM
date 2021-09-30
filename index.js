@@ -55,16 +55,10 @@ function addCategory() {
 function filterTasks() {
   const selectedCategory = getSelectedCategoryById(CATEGORY_FILTER);
   const done = getFilteredDone();
-  const filteredTask = [];
 
-  console.log("I am here");
+  complete = tasks.filter(
+    (task) => task.category === selectedCategory && task.done === done
+  );
 
-  complete = tasks.filter((task) => task.category === selectedCategory);
-  filteredTask.push(complete);
-  console.log(filteredTask);
-
-  renderTasks(filteredTask, "tasks-list");
-
-  // REMOVE ME: sample alert
-  alert(`Category: ${selectedCategory} | done: ${done}`);
+  renderTasks(complete, "tasks-list");
 }

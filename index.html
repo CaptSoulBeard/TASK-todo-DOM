@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <div>
+  <body class="container font">
+    <div class="task">
       <h1>Create your task</h1>
       <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
       <select id="categories-list" title="All"></select>
@@ -22,16 +28,17 @@
       />
       <button onclick="addTask()">Add New Task!</button>
     </div>
-
-    <div>
-      <h1>Create your category</h1>
-      <input
-        type="text"
-        name="new-category"
-        id="new-category"
-        placeholder="* Add a new category"
-      />
-      <button onclick="addCategory()">Add New Category!</button>
+    <div class="category-container">
+      <div class="category-background">
+        <h1>Create your category</h1>
+        <input
+          type="text"
+          name="new-category"
+          id="new-category"
+          placeholder="* Add a new category"
+        />
+        <button onclick="addCategory()">Add New Category!</button>
+      </div>
     </div>
 
     <!-- FILTERING DIV -->
@@ -40,16 +47,20 @@
       <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
       <select id="categories-list-filter" title="All"></select>
       <!-- DONE for filtering thing -->
-      <div>
-        <input type="checkbox" name="done" id="done" />
-        <label for="done">Filter by done</label>
-        <button onclick="filterTasks()">Filter the List!</button>
-      </div>
+
+      <input type="checkbox" name="done" id="done" />
+      <label for="done">Filter by done</label>
+      <button onclick="filterTasks()">Filter the List!</button>
     </div>
     <hr />
 
     <!-- KEEP THE DIV EMPTY. IT WILL BE FILLED BY JS  -->
-    <div id="tasks-list"></div>
+
+    <div class="notepad">
+      <!--THIS NEEDS TO BE ON TOP OF THE PAPER!!!!!-->
+      <div class="top"></div>
+      <div id="tasks-list" class="paper"></div>
+    </div>
   </body>
 
   <script src="./components/categoryItem.js"></script>
