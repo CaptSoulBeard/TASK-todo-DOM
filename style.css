@@ -1,6 +1,5 @@
 body {
-  /* background-image: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"); */
-  background-image: url("https://images.unsplash.com/photo-1513106021000-168e5f56609d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+  background-image: url("https://images.unsplash.com/photo-1498569026542-39c64353e401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +34,8 @@ body {
   box-shadow: 0px 10px 13px -7px #000000, 0px 0px 35px -4px #000000,
     0px 0px 35px -4px #000000;
   overflow: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  -ms-overflow-style: none;
 }
 
 .top {
@@ -45,11 +46,6 @@ body {
   background: #333;
   border-radius: 5px 5px 0 0;
 }
-
-/* .shado {
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 35px -4px #406a86;
-  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 35px -4px #368aa3;
-} */
 
 .paper {
   width: 200%;
@@ -107,8 +103,6 @@ body {
 .float-container {
   display: flex;
   width: 100vw;
-  /* border: 3px solid #fff;
-  padding: 20px; */
 }
 .float-child {
   display: flex;
@@ -116,6 +110,29 @@ body {
   justify-content: center;
   align-items: center;
   width: 40vw;
-  /* margin: 30px; */
-  /* background-color: #9fa63f5d; */
+}
+
+#new-category {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+}
+
+#new-task {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+}
+
+button {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+}
+
+.hidden {
+  display: none;
 }
